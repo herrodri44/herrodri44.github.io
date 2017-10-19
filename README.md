@@ -1,2 +1,2 @@
-# herrodri44.github.io
-Web Project practicing css styles
+# CSSpractice01
+Practicing with git and version control, and css stuff
