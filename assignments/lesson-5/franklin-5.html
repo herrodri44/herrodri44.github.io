@@ -7,7 +7,7 @@
   <meta name="author" content="Hernan Rodriguez">
   <meta name="description" content="Franklin city - weather forecast">
   <!-- external style references in the proper cascading order -->    
-  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
   <link href="../../css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
   <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -37,13 +37,21 @@
   <main>
     <h2>The City of Franklin</h2>
     <figure>
-      <img>
+      <img >
     </figure>
     <section>
-      <h3>Weather Summary</h3>    
+      <h3 style="text-align: center">Weather Summary</h3>    
       <div class="highlow">
-        <p>High:</p>  
-        <p>Low:</p>  
+        <!--<p>High:</p>  
+        <p>Low:</p>  -->
+          <table>
+              <tr>
+                  <td>High:</td><td>90°F</td>
+              </tr>
+              <tr>
+                  <td>Low:</td><td>66°F</td>
+              </tr>
+          </table>
       </div>
       <div class="current">
         Sunny
@@ -52,8 +60,16 @@
         </picture>
       </div>   
       <div class="conditions">
-        <p>Precipitation:</p>  
-        <p>Wind Speed:</p>  
+        <!--<p>Precipitation:</p>  
+        <p>Wind Speed:</p>  -->
+          <table>
+              <tr>
+                  <td>Precipitation:</td><td>0%</td>
+              </tr>
+              <tr>
+                  <td>Wind Speed:</td><td>5 mph SW</td>
+              </tr>
+          </table>
       </div>           
     </section>
         
