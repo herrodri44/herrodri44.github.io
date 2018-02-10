@@ -48,9 +48,19 @@ nav ul li a:hover {
 }
 
 main {}
-main h2 {}
+main h2 { text-align: center; }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
+
+div.highlow table, div.conditions table{
+    margin: auto;
+    background-color: #A8D8FC;
+}
+table td {
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid #555;
+}
 
 section.forecast {
     display: none;
