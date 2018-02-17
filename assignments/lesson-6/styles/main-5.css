@@ -114,10 +114,13 @@ section.forecast {
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+  width: 250px; /* fill the page in the small/phone view */
+  margin: 15px;
+  float: left
 }
-
+article p.town-article { 
+  padding: 20px
+}
 footer {}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
