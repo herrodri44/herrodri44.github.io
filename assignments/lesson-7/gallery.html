@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin City | Weather Forecast</title>
+    <meta name="author" content="Hernan Rodriguez">
+    <meta name="description" content="Franklin city - weather forecast">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="../../css/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <link href="styles/large-5.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/sun-159392_640.png" alt="The site logo">
+        <h1>WEATHER-CHECK</h1>
+        <div class="subheading">Check now, plan ahead!</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id="myNavigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="franklin-7.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Gallery</h1>
+        
+        <div class="imgContainer">
+            <img src="images/gallery-optimized/cloudySea.jpeg">
+            <img src="images/gallery-optimized/foggyCity.jpeg">
+            <img src="images/gallery-optimized/lightning.png">
+        
+            <img src="images/gallery-optimized/snowForrest.jpeg">
+            <img src="images/gallery-optimized/sunnyForrest.jpeg">
+            <img src="images/gallery-optimized/underRain.jpeg">
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>

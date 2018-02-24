@@ -27,5 +27,20 @@
     }
     
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    
+     /* Gallery */
+    
+    .imgContainer {
+        width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    grid-gap: 20px;
+        
+    }
+
+    .imgContainer img {
+        max-height: 200px
+    }
 
 }
