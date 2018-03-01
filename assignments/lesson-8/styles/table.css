@@ -1,10 +1,11 @@
 * {
     font-family: Ubuntu, sans-serif;
+    font-size: 0.982em;
 }
 
 table, caption {
-    width:250px;
-    box-shadow: 5px 5px 10px gray;
+    width:220px;
+    box-shadow: 7px 10px 15px gray;
 }
 
 table, th, td, caption {
@@ -25,6 +26,12 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
    background-color:#e7f0ed;
 }
+
+table tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+}
+
 table th {
     background-color: #628ca6;
     color: white;
@@ -32,8 +39,9 @@ table th {
 }
 
 th, td {
-    padding: 3px;
+    padding: 5px;
     text-align: center;
+    font-size: 0.9em
 }
 
 .blackFriday {
