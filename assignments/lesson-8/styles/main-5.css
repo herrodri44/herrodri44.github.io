@@ -195,7 +195,14 @@ input.submitBtn{
     box-shadow: 4px 4px 10px #666;
 }
 
+/*----------------------- Thank you page ---------------------------*/
 
+.thanks {
+    margin: 5% 10%;
+    border: #666 1px solid;
+    padding: 20px;
+    text-align: center;
+}
 
 footer {}
 footer aside {}
