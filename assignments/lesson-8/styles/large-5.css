@@ -27,4 +27,23 @@
     .imgContainer img:hover {
         box-shadow: 5px 5px 10px gray;
     }
+    /*----------------------- FORM STUFF ---------------------------*/
+
+    form#stormForm {
+        margin: 1em 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    input.submitBtn{
+        max-width: 300px;
+        margin: auto;
+        grid-column: 1 / 3;
+    }
+
 }
+
+
+
+
