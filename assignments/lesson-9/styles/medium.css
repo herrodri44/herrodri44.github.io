@@ -25,6 +25,8 @@
     div.current img {
         max-height: 350px;
         max-width: 600px;
+        
+        
     }
     
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
