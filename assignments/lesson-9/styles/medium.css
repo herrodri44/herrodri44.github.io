@@ -23,7 +23,8 @@
     }
   
     div.current img {
-        max-height: 250px;
+        max-height: 350px;
+        max-width: 600px;
     }
     
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
@@ -41,6 +42,11 @@
 
     .imgContainer img {
         max-height: 200px
+    }
+    
+    .cities {
+        justify-items: center;
+        grid-template-columns: 200px 200px 200px;
     }
 
 }

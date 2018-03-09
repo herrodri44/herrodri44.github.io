@@ -204,6 +204,38 @@ input.submitBtn{
     text-align: center;
 }
 
+
+/*----------------------------- Index Page -------------------------*/
+
+.cities {
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 5%;
+}
+
+.town {
+    border: 3px solid grey;
+    padding: 5px;
+    max-width: 320px;
+    background-color: #b7deff;
+    transition: transform .2s;
+    -webkit-box-shadow: 3px 10px 16px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 10px 16px 2px rgba(0,0,0,0.75);
+box-shadow: 3px 10px 16px 2px rgba(0,0,0,0.75);
+}
+
+.town:hover {
+    transform: scale(1.1); 
+}
+
+.town h3 {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+
+
 footer {}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
