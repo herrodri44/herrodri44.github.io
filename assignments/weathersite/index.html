@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin City | Weather Forecast</title>
+    <meta name="author" content="Hernan Rodriguez">
+    <meta name="description" content="Franklin city - weather forecast">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="../../css/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/large.css" rel="stylesheet">
+    
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+        <img src="images/sun-159392_640.png" alt="The site logo">
+        <h1>WEATHER-CHECK</h1>
+        <div class="subheading">Check now, plan ahead!</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id="myNavigation">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <h2>Cities</h2>
+        
+        <div class ="cities">
+            <section class = "town">
+            <h3>City: <span id="city1">Frank</span></h3>
+            <p>Moto: <span id="moto1"></span></p>
+            <p>Year Founded: <span id="year1"></span></p>
+            <p>Population: <span id="pop1"></span></p>
+            <p>Annual Rainfall: <span id="aRain1"></span></p>
+        </section>
+        
+        <section class = "town">
+            <h3>City: <span id="city2">Green</span></h3>
+            <p>Moto: <span id="moto2"></span></p>
+            <p>Year Founded: <span id="year2"></span></p>
+            <p>Population: <span id="pop2"></span></p>
+            <p>Annual Rainfall: <span id="aRain2"></span></p>
+        </section>
+        
+        <section class = "town">
+            <h3>City: <span id="city3">Spring</span></h3>
+            <p>Moto: <span id="moto3"></span></p>
+            <p>Year Founded: <span id="year3"></span></p>
+            <p>Population: <span id="pop3"></span></p>
+            <p>Annual Rainfall: <span id="aRain3"></span></p>
+        </section>
+        </div>
+        
+        
+        
+        
+    </main>
+
+    <footer>
+        <aside>
+           email: Contact@weather-check.com - Phone (011) 555-00110 
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | WEATHER-CHECK | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+    
+    <script src="scripts/wu-weather.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 40em) {
+  
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1 / -1;
+    }
+    
+    .cities {
+        grid-template-columns: 350px 350px 350px;
+    }
+    
+    body {
+        background-color: grey;
+    }
+    
+}
+
+
+
+

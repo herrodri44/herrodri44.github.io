@@ -13,10 +13,35 @@
   }
   
   nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    
+    
+    div.weather-info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.weather-info div:nth-of-type(1){
+        -webkit-flex-basis: 300px; /* Safari 6.1+ */
+        flex-basis: 300px;
+    }
+    div.weather-info div:nth-of-type(2){
+        -webkit-flex-basis: 100px; /* Safari 6.1+ */
+        flex-basis: 100px;
+    }
   
   section.forecast { 
       display: inline-block;
-    }  /* show the 10-day forecast with the medium view and up */
+      background-color: #A8D8FC;
+      padding: 20px;
+      margin-top: 10px;
+      border: 3px solid grey;
+      width: 100%;
+    }  
+    section.forecast h3 {
+        text-align: center;
+    }
+    /* show the 10-day forecast with the medium view and up */
     section.forecast table th,section.forecast table  td {
         font-size: 10px;
         font-weight: 10px

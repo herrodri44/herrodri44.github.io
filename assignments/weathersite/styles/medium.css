@@ -1,0 +1,90 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: ;
+        height: 50px;
+    }
+    
+    nav ul li a {
+  }
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    
+    
+    div.weather-info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.weather-info div:nth-of-type(1){
+        -webkit-flex-basis: 300px; /* Safari 6.1+ */
+        flex-basis: 300px;
+    }
+    div.weather-info div:nth-of-type(2){
+        -webkit-flex-basis: 100px; /* Safari 6.1+ */
+        flex-basis: 100px;
+    }
+  
+  section.forecast { 
+      display: inline-block;
+      background-color: #A8D8FC;
+      padding: 20px;
+      margin-top: 10px;
+      border: 3px solid grey;
+      width: 100%;
+    }  
+    section.forecast h3 {
+        text-align: center;
+    }
+    /* show the 10-day forecast with the medium view and up */
+    section.forecast table th,section.forecast table  td {
+        font-size: 10px;
+        font-weight: 10px
+    }
+  
+    div.current img {
+        max-height: 350px;
+        max-width: 600px;
+        
+        
+    }
+    
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    
+     /* Gallery */
+    
+    .imgContainer {
+        width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    grid-gap: 20px;
+        
+    }
+
+    .imgContainer img {
+        max-height: 200px
+    }
+    
+    .cities {
+        justify-items: center;
+        grid-template-columns: 200px 200px 200px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+

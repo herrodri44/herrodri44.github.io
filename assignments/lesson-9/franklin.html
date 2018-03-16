@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,54 +44,52 @@
     <main>
         <h2>The City of Franklin</h2>
         <figure>
-            <img src="images/Optimized-town.jpeg" alt="Franklin Mountain" width="100%">
+            <img src="images/Optimized-town.jpeg" alt="Franklin Mountain" width="100px">
         </figure>
         <section>
             <h3 style="text-align: center">Weather Summary</h3>
-            <div class="highlow">
-                <table>
-                    <tr>
-                        <td>High:</td>
-                        <td id="high">90°F</td>
-                    </tr>
-                    <tr>
-                        <td>Low:</td>
-                        <td id="low">66°F</td>
-                    </tr>
-                </table>
-                
-                <p>Current weather: <span id=curr_weather>sunny</span></p>
-                <p>Current Temperature: <span id=curr_temp>sunny</span></p>
-                
-                <img src="" alt="Current Weather" id="weather_icon">
+            <div class="weather-info">
+                <div class="highlow">
+                    <ul>
+                        <li>High: <span id="high">90°F</span></li>
+                        <li>Low: <span id="low">66°F</span></li>
+                        <li>Current weather: <span id=curr_weather>sunny</span></li>
+                        <li>Current Temperature: <span id=curr_temp>sunny</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="#" alt="Current Weather" id="weather_icon" style="max-width: 80px; max-height: 80px">
+                </div>
+                <div class="conditions">
+                    <table>
+                        <tr>
+                            <td>Precipitation:</td>
+                            <td id="precipitation">0%</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed:</td>
+                            <td id="ws">5 mph SW</td>
+                        </tr>
+                        <tr>
+                            <td>Wind Chill:</td>
+                            <td id="wChill"></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+
+
             <div class="current">
                 <picture>
-                    <img src="images/Optimized-franklin-(large).jpg" alt="Franklin sunny"
-                         sizes= "50vw" srcset="images/Optimized-franklin-(small).jpg 300w,
+                    <img src="images/Optimized-franklin-(large).jpg" alt="Franklin sunny" sizes="50vw" srcset="images/Optimized-franklin-(small).jpg 300w,
                                                images/Optimized-franklin-(medium).jpg 600w,
                                                images/Optimized-franklin-(large).jpg 800w">
                 </picture>
             </div>
-            
-            <div class="conditions">
-                <table>
-                    <tr>
-                        <td>Precipitation:</td>
-                        <td id="precipitation">0%</td>
-                    </tr>
-                    <tr>
-                        <td>Wind Speed:</td>
-                        <td id="ws">5 mph SW</td>
-                    </tr>
-                    <tr>
-                        <td>Wind Chill:</td>
-                        <td id="wChill"></td> 
-                    </tr>
-                </table>
-            </div>
-        </section>
 
+
+        </section>
+        <hr>
         <section class="forecast">
             <h3>10 Day Forecast</h3>
             <table>
@@ -123,10 +122,10 @@
                     </tr>
                 </tbody>
             </table>
-                    
+
         </section>
 
-        <article>
+        <article class="bottom-art">
             <h3>Franklin Breaks Record</h3>
             <p class="town-article">
                 <img src="images/sunny.jpeg" alt="Sunny view"> Main Street of Franklin City, View of the current weather. Only a few clouds in the sky, perfect for a nice barbeque.
@@ -141,11 +140,12 @@
         </aside>
         <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
-    
+
     <script src="scripts/wu-weather.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/windchill.js"></script>
-    
+
 </body>
+
 </html>

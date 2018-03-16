@@ -123,9 +123,23 @@ main picture img {
     text-align: center;
     margin: 10px;
 }
+
+.current picture img {
+    margin: 0 auto;
+}
+
+div.highlow {
+    display: flex;
+}
+
+div.highlow img {
+    float: right;
+}
+
 div.highlow table, div.conditions table{
-    margin: auto;
+    margin: 0 auto 15px;
     background-color: #A8D8FC;
+    
 }
 table td {
     padding: 5px 12px;
@@ -140,10 +154,16 @@ section.forecast {
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 250px; /* fill the page in the small/phone view */
   margin: 15px;
-  float: left
+  float: 
 }
 article p.town-article { 
-  padding: 20px
+  padding: 20px;
+  float: left;
+  text-align: center;
+}
+
+article.bottom-art {
+     overflow:hidden;
 }
 
 /*----------------------- FORM STUFF ---------------------------*/
@@ -236,8 +256,15 @@ box-shadow: 3px 10px 16px 2px rgba(0,0,0,0.75);
 
 
 
-footer {}
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+footer {
+    background-color: #cdcfd3;
+    border: 1px solid black;
+}
+footer aside {
+    padding: 5px;
+}
+footer>p {
+    padding: 15px;
+} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
