@@ -1,6 +1,6 @@
 var weatherObject = new XMLHttpRequest();
 
-var reqUrl = 'http://api.wunderground.com/api/fb18c4811ea76515/conditions/q/MN/Franklin.json';
+var reqUrl = 'https://api.wunderground.com/api/fb18c4811ea76515/conditions/q/MN/Franklin.json';
 weatherObject.open('GET', reqUrl, true);
 
 weatherObject.send();
@@ -71,7 +71,7 @@ request.onload = function() {
 
 
 // Request for 10 day forecast
-var requestForecast = "http://api.wunderground.com/api/fb18c4811ea76515/forecast10day/q/MN/Franklin.json";
+var requestForecast = "https://api.wunderground.com/api/fb18c4811ea76515/forecast10day/q/MN/Franklin.json";
 var requestFC = new XMLHttpRequest();
 
 requestFC.open('GET', requestForecast);
