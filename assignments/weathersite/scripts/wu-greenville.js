@@ -70,5 +70,46 @@ request.onload = function() {
 }
 
 
+// Request for 10 day forecast
+var requestForecast = "http://api.wunderground.com/api/fb18c4811ea76515/forecast10day/q/TX/Greenville.json";
+var requestFC = new XMLHttpRequest();
 
+requestFC.open('GET', requestForecast);
+//requestFC.responseType = 'json';
+
+// Send the request
+requestFC.send();
+
+// handle response
+requestFC.onload = function() {
+    //var forecast = request.response;
+    var forecastResponse = JSON.parse(requestFC.responseText);
+    //console.log(forecastResponse);
+    
+    // High
+    document.getElementById('hi1').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["0"].high.fahrenheit + '&deg;';
+    document.getElementById('hi2').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["1"].high.fahrenheit + '&deg;';
+    document.getElementById('hi3').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["2"].high.fahrenheit + '&deg;';
+    document.getElementById('hi4').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["3"].high.fahrenheit + '&deg;';
+    document.getElementById('hi5').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["4"].high.fahrenheit + '&deg;';
+    document.getElementById('hi6').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["5"].high.fahrenheit + '&deg;';
+    document.getElementById('hi7').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["6"].high.fahrenheit + '&deg;';
+    document.getElementById('hi8').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["7"].high.fahrenheit + '&deg;';
+    document.getElementById('hi9').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["8"].high.fahrenheit + '&deg;';
+    document.getElementById('hi10').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["9"].high.fahrenheit + '&deg;';
+    
+    // Low
+    
+    document.getElementById('lo1').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["0"].low.fahrenheit + '&deg;';
+    document.getElementById('lo2').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["1"].low.fahrenheit + '&deg;';
+    document.getElementById('lo3').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["2"].low.fahrenheit + '&deg;';
+    document.getElementById('lo4').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["3"].low.fahrenheit + '&deg;';
+    document.getElementById('lo5').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["4"].low.fahrenheit + '&deg;';
+    document.getElementById('lo6').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["5"].low.fahrenheit + '&deg;';
+    document.getElementById('lo7').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["6"].low.fahrenheit + '&deg;';
+    document.getElementById('lo8').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["7"].low.fahrenheit + '&deg;';
+    document.getElementById('lo9').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["8"].low.fahrenheit + '&deg;';
+    document.getElementById('lo10').innerHTML = forecastResponse.forecast.simpleforecast.forecastday["9"].low.fahrenheit + '&deg;';
+    
+}
 
