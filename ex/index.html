@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>My Weather Channel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>My Weather Channel</h1>
+            <h3>JSON Data from the Weather Underground</h3>
+            <img src="#" alt="Logo">
+        </header>
+        <main>
+            <section>
+                <!-- Description of the app -->
+                <h2>Weather App</h2>
+                <p>Type in the State code, usually 2 letters, and the City name you are interested in, an check out how is the weather forecast! You will also be able to see a 3 day forecast.</p>
+            </section>
+            
+            <section>
+                <!-- The form where the user makes the request -->
+                <form method="post" enctype="multipart/form-data" name="weather" id="weather-form">
+                    <fieldset>
+                        <legend><span>City Data</span></legend>
+                        <label><span>State Code:</span><input name="stateCode" type="text" placeholder="TX" pattern="[A-Z]{2}" required></label>
+                        <label><span>City Name:</span><input name="cityName" type="text" placeholder="Huston" pattern="[a-zA-Z -._]{3,99}" required></label>
+                    </fieldset>
+                <input type="submit" value="Check Weather!" class="submitBtn">
+                <input type="hidden" name="redirect" value="forecast.html">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Hernan A. Rodriguez</p>
+            <span id="currentDate">Date Placeholder</span>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
