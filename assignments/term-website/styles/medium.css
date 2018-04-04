@@ -1,0 +1,67 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50px;
+    }
+    nav ul a {
+        text-decoration: none;
+
+    }
+
+    nav button {
+        display: none;
+    }
+    /* hamburger button does not need to be shown */
+    header {
+        display: flex;
+        align-content: flex-start;
+    }
+
+    header > img {
+        margin: auto 0;
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    header div.nav-titles > h1 {
+        font-size: 2.5em;
+        width: 400px;
+        height: 100px;
+        padding: 20px;
+    }
+    header div.nav-titles > h3 {
+        display: inline;
+        padding: 20px 20px;
+        line-height: 5em;
+    }
+
+    /********* IMAGES **********/
+    div.img-banner img {
+    max-height: 400px;
+}
+    
+    div.imgContainer {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+    
+    div.imgContainer a:nth-child(odd){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+    }
+    div.imgContainer a:nth-child(even){
+        grid-column-start: 3;
+        grid-column-end: 5;
+        align-self: center;
+    }
+    
+    div.imgContainer a:nth-child(5) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+}

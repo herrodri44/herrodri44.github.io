@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Mountain-Spoke</title>
+    <meta name="author" content="Hernan Rodriguez">
+    <meta name="description" content="Home, Mountain-Spoke - Mountain Bikes">
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Russo+One" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- Main, Medium and Large style sheets -->
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="The site logo">
+        <div class="nav-titles">
+            <h1>The Mountain Spoke</h1>
+            <h3>Montana's Bikes</h3>
+        </div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id="myNavigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="">Adventure Tours</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Sales</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact Us!</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="img-banner">
+            <img src="images/Optimized-main.jpg" alt="main mountains Montana">
+            <button>Contact us!</button>
+        </div>
+
+        <article>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+            </p>
+        </article>
+
+        <div class="imgContainer">
+            <a href="#"><img src="images/adventure_tours.jpeg" alt="Adventure Tours link"></a>
+            <a href="#"><img src="images/Optimized-Events.jpg" alt="Events section"></a>
+            <a href="#"><img src="images/sales.jpeg" alt="Sales Page"></a>
+            <a href="#"><img src="images/service.jpeg" alt="Service section"></a>
+            <a href="#"><img src="images/Optimized-contact_us.jpg" alt="Contact page link"></a>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <aside>
+            Email: Contact@mountain-spoke.com - Phone (011) 555-55555
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain-Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>
