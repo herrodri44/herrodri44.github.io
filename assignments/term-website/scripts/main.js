@@ -7,7 +7,8 @@ obj.send();
 
 obj.onload = function(){
     var objInfo = JSON.parse(obj.responseText);
+    console.log("testing obj 1");
     console.log(objInfo.services[1]);
-
+ 
     
 }
