@@ -10,12 +10,8 @@ obj.onload = function () {
 
     $.each(objInfo.services, function (index, element) {
         $('.tbody').append(
-                '<tr><td>'+ element.description +'</td><td>'+ element.price +'</td></tr>'
+                '<tr><td>'+ element.description +'</td><td> $'+ element.price +'</td></tr>'
         );
-    });
-
-    $('.tbody > tr > td').each(function (index, element) {
-        $(element).css('background-color', 'rgb(100,200,0)');
     });
 
 }

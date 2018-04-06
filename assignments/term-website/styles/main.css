@@ -189,4 +189,25 @@ footer {
 .service-table {
     border: 1px solid black;
 }
+.service-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+.service-table td, .service-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.service-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.service-table tr:hover {background-color: #ddd;}
+
+.service-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
