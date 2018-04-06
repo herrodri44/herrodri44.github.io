@@ -186,13 +186,18 @@ footer {
 
 /******************* SERVICES PAGE ***************/
 
-.service-table {
-    border: 1px solid black;
+.service-table thead {
+    background-color: #38b747;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
 }
+
 .service-table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+    width: 80%;
 }
 
 .service-table td, .service-table th {
@@ -201,8 +206,9 @@ footer {
 }
 
 .service-table tr:nth-child(even){background-color: #f2f2f2;}
+.service-table tbody tr:nth-child(odd){background-color: #aaa;}
 
-.service-table tr:hover {background-color: #ddd;}
+.service-table tbody tr:hover {background-color: #ddd;}
 
 .service-table th {
     padding-top: 12px;
