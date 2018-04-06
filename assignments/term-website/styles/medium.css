@@ -40,26 +40,35 @@
 
     /********* IMAGES **********/
     div.img-banner img {
-    max-height: 400px;
-}
-    
+        max-height: 400px;
+    }
+
     div.imgContainer {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 2fr;
+        grid-gap: 20px;
     }
-    
-    div.imgContainer a:nth-child(odd){
+
+    div.imgContainer div img:hover {
+        padding: 0;
+        -webkit-box-shadow: 8px 0px 24px 3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 8px 0px 24px 3px rgba(0, 0, 0, 0.75);
+        box-shadow: 8px 0px 24px 3px rgba(0, 0, 0, 0.75);
+    }
+
+
+    div.imgContainer div:nth-child(odd) {
         grid-column-start: 1;
         grid-column-end: 3;
-        
+
     }
-    div.imgContainer a:nth-child(even){
+    div.imgContainer div:nth-child(even) {
         grid-column-start: 3;
         grid-column-end: 5;
         align-self: center;
     }
-    
-    div.imgContainer a:nth-child(5) {
+
+    div.imgContainer div:nth-child(5) {
         grid-column-start: 2;
         grid-column-end: 4;
     }

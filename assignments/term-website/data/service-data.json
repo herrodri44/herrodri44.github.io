@@ -1,0 +1,25 @@
+    {
+        "services": [
+            {
+                "description": "Tire repair",
+                "price": 10.50
+            },
+            {
+                "description": "Tire change",
+                "price": 15.20
+            },
+            {
+                "description": "Bike chain service",
+                "price": 20.00
+            },
+            {
+                "description": "Maintenance of suspension components",
+                "price": 25.75
+            },
+            {
+                "description": "Breaks components service",
+                "price": 21.30
+            }
+        ]   
+
+    }

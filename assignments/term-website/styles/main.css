@@ -31,13 +31,13 @@ header {
     display: flex;
     height: 200px;
     background: #38b747;
-background: -moz-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, #38b747), color-stop(47%, #d0dbd1), color-stop(51%, #d0dbd1), color-stop(57%, #d0dbd1), color-stop(100%, #38b747));
-background: -webkit-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
-background: -o-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
-background: -ms-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
-background: linear-gradient(to bottom, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b747', endColorstr='#38b747', GradientType=0 );
+    background: -moz-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #38b747), color-stop(47%, #d0dbd1), color-stop(51%, #d0dbd1), color-stop(57%, #d0dbd1), color-stop(100%, #38b747));
+    background: -webkit-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
+    background: -o-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
+    background: -ms-linear-gradient(top, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
+    background: linear-gradient(to bottom, #38b747 0%, #d0dbd1 47%, #d0dbd1 51%, #d0dbd1 57%, #38b747 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38b747', endColorstr='#38b747', GradientType=0);
 }
 
 header > img {
@@ -130,9 +130,35 @@ div.img-banner button {
     color: #231f6d;
     text-shadow: -1px 0 #d0dbd1, 0 1px #d0dbd1, 1px 0 #d0dbd1, 0 -1px #d0dbd1;
     font-weight: bold;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
 }
+
 div.img-banner button:hover {
-    /* pointer should have hand */
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 36px 10px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 36px 10px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 36px 10px rgba(255, 255, 255, 1);
+}
+
+.text-inImg {
+    color: white;
+    text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    top: -200px;
+    opacity: 0;
+    transition: .5s ease;
+    text-align: center;
+}
+
+.overlay {
+    height: 0;
+}
+
+.inner-imgContainer:hover .text-inImg {
+    opacity: 1;
 }
 
 div.imgContainer {
@@ -140,7 +166,8 @@ div.imgContainer {
 }
 
 /* make the user know where each lik takes them to*/
-div.imgContainer img {
+
+div.imgContainer div img {
     width: 100%;
     padding: 10px;
 }
@@ -149,3 +176,17 @@ div.imgContainer img {
 article p {
     text-align: center;
 }
+
+footer {
+    border: 2px solid #231f6d;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 20px 0 0;
+}
+
+/******************* SERVICES PAGE ***************/
+
+.service-table {
+    border: 1px solid black;
+}
+
