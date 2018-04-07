@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us! | Mountain-Spoke</title>
+    <meta name="author" content="Hernan Rodriguez">
+    <meta name="description" content="Contact, Mountain-Spoke - Mountain Bikes">
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Russo+One" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- Main, Medium and Large style sheets -->
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo-v2.png" alt="The site logo">
+        <div class="nav-titles">
+            <h1>The Mountain Spoke</h1>
+            <h3>Montana's Bikes</h3>
+        </div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id="myNavigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Adventure Tours</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a class="active" href="#">Contact Us!</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="img-banner">
+            <img src="images/Optimized-main.jpg" alt="main mountains Montana">
+        </div>
+
+        <article>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+        </article>
+        
+        <form action="thanks.html" enctype="multipart/form-data" name="contact-Form" id="consultForm">
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
+                <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required></label>
+                <label><span>Email:</span><input name="email" type="email" placeholder="zen@example.com" required></label>
+                <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="55550000" pattern="[0-9]{10,20}" required></label>
+            </fieldset>
+            <fieldset>
+                <legend><span>Consult</span></legend>
+                <label><span>Consult reason:</span>
+                    <select name="reasons" required>
+                      <option value="purchase">Purchase</option>
+                      <option value="service">Bike Service</option>
+                      <option value="tours-info">Event Information</option>
+                      <option value="event-info">Tour Information</option>
+                      <option value="other">Other</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Comments:</span>
+                    <textarea rows="4" cols="35" name="comment" form="contact-Form" placeholder="Enter any additional information here..."></textarea>
+                </label>
+                
+            </fieldset>
+            <input type="submit" value="Send consult" class="submitBtn">
+        </form>
+        
+        <div id="googleMap"></div>
+
+
+    </main>
+
+    <footer>
+        <aside>
+            Contact@mountain-spoke.com - Phone (011) 555-55555
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain-Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script scr="scripts/gMap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEhT09YAGVK7dtHpfg18YiDqss4_pgKfQ&callback=myMap"></script>
+</body>
+
+</html>

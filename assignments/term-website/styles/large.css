@@ -1,17 +1,17 @@
 @media only screen and (min-width: 64em) {
-  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-   /********* IMAGES **********/
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    /********* IMAGES **********/
     div.imgContainer {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
         grid-auto-rows: 300px;
         grid-gap: 20px;
     }
-    
+
     div.imgContainer img {
         padding: 10px;
     }
-    
+
     div.imgContainer div:nth-child(1) {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -27,20 +27,23 @@
         grid-column-end: 7;
         align-self: center;
     }
-    
+
     div.imgContainer div:nth-child(4) {
         grid-column-start: 2;
         grid-column-end: 4;
         align-self: center;
     }
-    
+
     div.imgContainer div:nth-child(5) {
         grid-column-start: 4;
         grid-column-end: 6;
         align-self: center;
     }
+
+    /******* Form ********/
+    form#consultForm {
+        margin: 1em 3%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
-
-
-
-

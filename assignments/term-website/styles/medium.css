@@ -72,5 +72,9 @@
         grid-column-start: 2;
         grid-column-end: 4;
     }
+    
+    input.submitBtn{
+        justify-self: start;
+    }
 
 }

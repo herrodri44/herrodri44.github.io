@@ -226,3 +226,61 @@ footer {
     background-color: #4CAF50;
     color: white;
 }
+
+/******************* Contact PAGE ***************/
+
+form#consultForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1em;
+    margin-bottom: 0px;
+}
+fieldset {
+    background-color: #BAD2FE;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #231f6d solid 1px;
+    width: 80%;
+}
+legend{
+    color: #fff;
+    margin-left: 10%;
+    padding: .5em;
+    border: #231f6d solid 1px;
+    background-color: #38b747;
+    border-radius: .4em;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: .8em;
+    color: #000000;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+
+input.submitBtn{
+    -webkit-appearance: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background: #38b747;
+    box-shadow: 4px 4px 10px #666;
+}
+
+#googleMap {
+    width:50%;
+    height:200px;
+}
+
