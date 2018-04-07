@@ -50,7 +50,7 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
         </article>
-        
+
         <form action="thanks.html" enctype="multipart/form-data" name="contact-Form" id="consultForm">
             <fieldset>
                 <legend><span>Personal Information</span></legend>
@@ -73,11 +73,11 @@
                     <span>Comments:</span>
                     <textarea rows="4" cols="35" name="comment" form="contact-Form" placeholder="Enter any additional information here..."></textarea>
                 </label>
-                
+
             </fieldset>
             <input type="submit" value="Send consult" class="submitBtn">
         </form>
-        
+
         <div id="googleMap"></div>
 
 
@@ -91,7 +91,15 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script scr="scripts/gMap.js"></script>
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEhT09YAGVK7dtHpfg18YiDqss4_pgKfQ&callback=myMap"></script>
 </body>
 
