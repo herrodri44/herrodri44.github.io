@@ -280,6 +280,8 @@ input.submitBtn{
 }
 
 #googleMap {
+    display: block;
+    margin: 10px auto;
     width:50%;
     height:200px;
 }
