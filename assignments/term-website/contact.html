@@ -78,7 +78,10 @@
             <input type="submit" value="Send consult" class="submitBtn">
         </form>
 
-        <div id="googleMap"></div>
+        <div>
+            <h3>Where are we? :</h3>
+            <div id="googleMap"></div>
+        </div>
 
 
     </main>
@@ -91,15 +94,7 @@
     </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script>
-        function myMap() {
-            var mapProp = {
-                center: new google.maps.LatLng(45.6722766, -111.0929062),
-                zoom: 5,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-        }
-    </script>
+    <script src="scripts/gMap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEhT09YAGVK7dtHpfg18YiDqss4_pgKfQ&callback=myMap"></script>
 </body>
 

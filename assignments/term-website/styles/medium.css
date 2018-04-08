@@ -76,5 +76,9 @@
     input.submitBtn{
         justify-self: start;
     }
+    
+    #googleMap {
+        width: 50%
+    }
 
 }
