@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event Page | Mountain-Spoke</title>
+    <meta name="author" content="Hernan Rodriguez">
+    <meta name="description" content="Iportant Event, Mountain-Spoke - Mountain Bikes">
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Russo+One" rel="stylesheet">
+    <!-- Normalize CSS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- Main, Medium and Large style sheets -->
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo-v2.png" alt="The site logo">
+        <div class="nav-titles">
+            <h1>The Mountain Spoke</h1>
+            <h3>Montana's Bikes</h3>
+        </div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul class="navigation" id="myNavigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Adventure Tours</a></li>
+            <li><a class="active" href="event.html">Events</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="contact.html">Contact Us!</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2 class="event-h2">Cycle the Continental Divide</h2>
+        <div class="event-container">
+            <img src="images/event-2.jpg" alt="Cycle continental divide event">
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <div class="event-registration">
+                <form action="thanks.html" enctype="multipart/form-data" name="eventRegistration" id="eventForm">
+                    <fieldset>
+                        <!-- full name, email, phone, date of birth, home state or country, and special accommodations/comments. -->
+                        <legend><span>Event Registration</span></legend>
+                        <label><span>Full Name:</span><input name="fullname" type="text" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required></label>
+                        <label><span>Email:</span><input name="email" type="email" placeholder="zen@example.com" required></label>
+                        <label><span>Phone Number:</span><input name="phone" type="tel" placeholder="55550000" pattern="[0-9]{10,20}" required></label>
+                        <label><span>Birthday:</span><input name="birthDay" type="date" placeholder="01/01/2000" required></label>
+                        <label><span>Home State or Country:</span><input name="home" type="text" placeholder="United States" pattern="[a-zA-Z ]{5,99}"></label>
+                        <label>
+                            <span>Accommodation / Comments:</span>
+                            <textarea rows="4" cols="30" name="comment" form="contact-Form" placeholder="Enter any additional information here..."></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Register!" class="submitBtn">
+                </form>
+            </div>
+            <div class="event-info">
+                <h3>Important Information</h3>
+                <ul>
+                    <li><span>DATES</span> => April 25th, May 1st and May 25th</li>
+                    <li><span>ROUTS</span> => Four Corners Cycling Trails</li>
+                    <li><span>COST</span>  => Under 18: $50.00, Over 18: $65.00</li>
+                    <li><span>BASIC REQUIREMENTS</span> => You have to be over 12 years old, have a mountain bike with the corresponding gear (helmet, lights, and comfortable clothing), <strng>and lots of energy</strng>!!</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <aside>
+            Contact@mountain-spoke.com - Phone (011) 555-55555
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain-Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

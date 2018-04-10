@@ -80,5 +80,19 @@
     #googleMap {
         width: 50%
     }
+    
+    .event-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    
+    .event-container p {
+        padding: 10px 20px 0 10px;
+    }
+    
+    .event-info{
+        max-height: 467px;
+        margin-top: 41px;
+    }
 
 }
