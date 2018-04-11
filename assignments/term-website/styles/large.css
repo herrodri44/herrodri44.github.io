@@ -74,4 +74,21 @@
         grid-row: 2/3;
         width: 100%;
     }
+    .accordion-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .acc-header h2 {
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+    
+    .acc-header p {
+        text-align: center;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
 }

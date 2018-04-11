@@ -72,27 +72,33 @@
         grid-column-start: 2;
         grid-column-end: 4;
     }
-    
-    input.submitBtn{
+
+    input.submitBtn {
         justify-self: start;
     }
-    
+
     #googleMap {
         width: 50%
     }
-    
+
     .event-container {
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
     }
-    
+
     .event-container p {
         padding: 10px 20px 0 10px;
     }
-    
-    .event-info{
+
+    .event-info {
         max-height: 467px;
         margin-top: 41px;
     }
+
+    .panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
 
 }

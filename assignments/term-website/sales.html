@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bike Service | Mountain-Spoke</title>
+    <title>Bike catalog | Mountain-Spoke</title>
     <meta name="author" content="Hernan Rodriguez">
-    <meta name="description" content="Service, Mountain-Spoke - Mountain Bikes">
+    <meta name="description" content="Sales catalog, Mountain-Spoke - Mountain Bikes">
     <!-- Google API font reference -->
     <link href="https://fonts.googleapis.com/css?family=Istok+Web|Russo+One" rel="stylesheet">
     <!-- Normalize CSS -->
@@ -34,8 +34,8 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Adventure Tours</a></li>
             <li><a href="event.html">Events</a></li>
-            <li><a href="sales.html">Sales</a></li>
-            <li><a class="active" href="service.html">Service</a></li>
+            <li><a class="active" href="sales.html">Sales</a></li>
+            <li><a href="service.html">Service</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
         </ul>
     </nav>
@@ -45,23 +45,30 @@
             <img src="images/Optimized-main.jpg" alt="main mountains Montana">
             <button><a href="contact.html">Contact us!</a></button>
         </div>
+        <div class="acc-header">
+            <h2>Mountain Bikes</h2>
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
 
-        <article>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-        </article>
+        <div class="accordion-container">
+            <button class="accordion">Olmo Spiro 2200</button>
+            <div class="panel">
+                <img src="images/sale-bike-1.jpg" alt="Olmo Spiro 2200 picture">
+                <p>Lorem ipsum es sentially unchanged. It was popularised in the 1960s with the release of Letraset sheets </p>
+            </div>
 
-        <table class="service-table">
-            <thead>
-                <tr>
-                    <td>Service Description</td>
-                    <td>Price</td>
-                </tr>
-            </thead>
-            <tbody class="tbody"></tbody>
-        </table>
+            <button class="accordion">Pegasus fire II</button>
+            <div class="panel">
+                <img src="images/sale-bike-2.jpg" alt="Pegasus fire II picture">
+                <p>Lorem ipsum...</p>
+            </div>
 
+            <button class="accordion">Fuel 360</button>
+            <div class="panel">
+                <img src="images/sale-bike-3.jpg" alt="Fuel 360 picture">
+                <p>Lorem ipsum...</p>
+            </div>
+        </div>
 
     </main>
 
@@ -74,9 +81,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="scripts/main.js"></script>
-
+    <script src="scripts/accordion.js"></script>
 </body>
 
 </html>
