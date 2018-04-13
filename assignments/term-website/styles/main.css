@@ -209,15 +209,23 @@ footer {
     width: 80%;
 }
 
-.service-table td, .service-table th {
+.service-table td,
+.service-table th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-.service-table tr:nth-child(even){background-color: #f2f2f2;}
-.service-table tbody tr:nth-child(odd){background-color: #aaa;}
+.service-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-.service-table tbody tr:hover {background-color: #ddd;}
+.service-table tbody tr:nth-child(odd) {
+    background-color: #aaa;
+}
+
+.service-table tbody tr:hover {
+    background-color: #ddd;
+}
 
 .service-table th {
     padding-top: 12px;
@@ -236,6 +244,7 @@ form#consultForm {
     padding: 1em;
     margin-bottom: 0px;
 }
+
 fieldset {
     background-color: #BAD2FE;
     border-radius: .8em;
@@ -243,7 +252,8 @@ fieldset {
     border: #231f6d solid 1px;
     width: 80%;
 }
-legend{
+
+legend {
     color: #fff;
     margin-left: 10%;
     padding: .5em;
@@ -266,7 +276,7 @@ label span {
 }
 
 
-input.submitBtn{
+input.submitBtn {
     -webkit-appearance: none;
     color: #fff;
     border: solid 1px #111;
@@ -282,12 +292,13 @@ input.submitBtn{
 #googleMap {
     display: block;
     margin: 10px auto 30px;
-    width:80%;
-    height:300px;
+    width: 80%;
+    height: 300px;
 }
+
 h3 {
     margin: 10px auto;
-    width:80%;
+    width: 80%;
     text-align: center;
 }
 
@@ -328,7 +339,7 @@ h3 {
 }
 
 .event-info li {
-  line-height: 1.5em;
+    line-height: 1.5em;
     padding: 5px;
     text-align: justify;
     margin-right: 7%;
@@ -345,16 +356,18 @@ div.acc-header h2 {
     text-align: center;
     color: #231f6d;
 }
+
 div.acc-header p {
     padding: 20px;
 }
 
 div.accordion-container {
     padding: 30px 0;
-    
+
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
+
 .accordion {
     background-color: #eee;
     color: #444;
@@ -369,11 +382,14 @@ div.accordion-container {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+
+.active,
+.accordion:hover {
     background-color: #ccc;
 }
 
 /* Style the accordion panel. Note: hidden by default */
+
 .panel {
     padding: 0 18px;
     background-color: #8ad185;
@@ -386,9 +402,45 @@ div.accordion-container {
     padding-right: 20px;
     float: left;
 }
+
 .panel p {
     display: inline;
     text-align: center;
-    
+
 }
 
+/*****************ADVENTURE TOURS******************/
+
+.tours-header h2 {
+    color: #231f6d;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tours-container h3 {
+    font-size: 1.5em;
+    background-color: #bbb;
+    padding: 10px;
+    border: 1px solid #231f6d;
+    border-radius: 5px;
+}
+
+.tours-header p {
+    text-align: center;
+    padding: 10px;
+}
+
+.tours-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid #231f6d;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tours-container img {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}

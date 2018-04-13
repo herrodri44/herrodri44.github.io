@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bike Service | Mountain-Spoke</title>
+    <title>Adventure Tours | Mountain-Spoke</title>
     <meta name="author" content="Hernan Rodriguez">
-    <meta name="description" content="Service, Mountain-Spoke - Mountain Bikes">
+    <meta name="description" content="Adventure tours, Mountain-Spoke - Mountain Bikes">
     <!-- Google API font reference -->
     <link href="https://fonts.googleapis.com/css?family=Istok+Web|Russo+One" rel="stylesheet">
     <!-- Normalize CSS -->
@@ -32,10 +32,10 @@
         <button onclick="toggleNavMenu()">&#9776;</button>
         <ul class="navigation" id="myNavigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="adventure.html">Adventure Tours</a></li>
+            <li><a class="active" href="adventure.html">Adventure Tours</a></li>
             <li><a href="event.html">Events</a></li>
             <li><a href="sales.html">Sales</a></li>
-            <li><a class="active" href="service.html">Service</a></li>
+            <li><a href="service.html">Service</a></li>
             <li><a href="contact.html">Contact Us!</a></li>
         </ul>
     </nav>
@@ -46,21 +46,41 @@
             <button><a href="contact.html">Contact us!</a></button>
         </div>
 
-        <article>
+        <div class="tours-header">
+            <h2>Adventure Tours</h2>
             <p>
-                In Mountain Spoke, we have the best profesionals in the area who will make your bike be in great shape. In this section below, you can see our price list of service maintenance. If your bike needs any other service, feel free to contact us and we will send you a budget. 
+                Here in The Mountain Spoke we know that mountain bikes can take you to an adventure. 
+                In this section we support bicycle tour adventures daily, so that anyone who wants to live an amazing experience, meet new friends and have a blast with your bike, can enjoy! 
+                Don't wait to contact us if any of these options interests you!
             </p>
-        </article>
+        </div>
 
-        <table class="service-table">
-            <thead>
-                <tr>
-                    <td>Service Description</td>
-                    <td>Price</td>
-                </tr>
-            </thead>
-            <tbody class="tbody"></tbody>
-        </table>
+        <div class="all-tours">
+            <div class="tours-container">
+                <h3>Dennis Coello Tour</h3>
+                <ul>
+                    <li>Length: 20 miles</li>
+                    <li>Skill level required: Medium</li>
+                    <li>Cost: $300</li>
+                    <li>Location: Fancy Gap, MO</li>
+                </ul>
+                <img src="images/Blue_Ridge_Bliss_North_Carolina2_DennisCoello.jpg" alt="Blue Ridge North tour">
+            </div>
+
+            <hr>
+
+            <div class="tours-container">
+                <h3>Curtis Corlew Tour</h3>
+                <ul>
+                    <li>Length: 40 miles</li>
+                    <li>Skill level required: Advance</li>
+                    <li>Cost: $600</li>
+                    <li>Location: Blue Bridge, MO</li>
+                </ul>
+                <img src="images/Cycle_Montana_Bozeman_CurtisCorlew.jpg" alt="Montana Bozeman country tour">
+            </div>
+        </div>
+
 
 
     </main>

@@ -91,4 +91,23 @@
         margin: 0 auto;
     }
     
+    .all-tours {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .all-tours div {
+        max-width: 600px;
+    }
+    
+    .all-tours div:nth-of-type(2) {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    
+    .tours-header p {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
