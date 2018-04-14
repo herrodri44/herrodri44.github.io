@@ -240,7 +240,6 @@ footer {
 form#consultForm {
     display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
     padding: 1em;
     margin-bottom: 0px;
 }
