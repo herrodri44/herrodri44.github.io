@@ -8,7 +8,8 @@
     <meta name="author" content="Hernan Rodriguez">
     <meta name="description" content="Contact, Mountain-Spoke - Mountain Bikes">
     <!-- Google API font reference -->
-    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <!-- Normalize CSS -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- Main, Medium and Large style sheets -->
@@ -46,9 +47,9 @@
         </div>
 
         <article>
+            <h3>Contact Section</h3>
             <p>
-                Thank you for visiting our web site!<br>
-                In the following form you can contact us for anything you need. Just select the option you want to contact us for, and we will be in touch in the following 24 hs. 
+                Thank you for visiting our web site!<br> In the following form you can contact us for anything you need. Just select the option you want to contact us for, and we will be in touch in the following 24 hs.
             </p>
         </article>
 
@@ -63,6 +64,7 @@
                 <legend><span>Consult</span></legend>
                 <label><span>Consult reason:</span>
                     <select name="reasons" required>
+                      <option value="">Select your contact reason</option>
                       <option value="purchase">Purchase</option>
                       <option value="service">Bike Service</option>
                       <option value="tours-info">Event Information</option>
@@ -72,7 +74,7 @@
                 </label>
                 <label>
                     <span>Comments:</span>
-                    <textarea rows="4" cols="35" name="comment" form="contact-Form" placeholder="Enter any additional information here..."></textarea>
+                    <textarea rows="4" cols="35" name="comment" form="consultForm" placeholder="Enter any additional information here..."></textarea>
                 </label>
 
             </fieldset>
